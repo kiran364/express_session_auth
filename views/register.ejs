@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .login-form{
+            margin-top: 20px;
+            justify-self: center;
+            padding-left: 40%;
+        }
+        .input-group{
+            margin-top: 10px;
+            font-size:larger;
+        }
+    </style>
+</head>
+<body>
+    <div class='login-form'>
+        <h3>Register Page</h3>
+        <form action='/register' method="POST">
+            <div class='input-group'>
+                <label for='username'> Username:</label>
+                <input type='text' name='username'/>
+            </div>
+            <div class='input-group'>
+                <label for='email'> Email:</label>
+                <input type='email' name='email'/>
+            </div>
+            <div class='input-group'>
+                <label for='password'> Password:</label>
+                <input type='password' name='password'/>
+            </div>
+            <button>Register</button>
+        </form>
+        <a href="login">Login</a>
+    </div>  
+</body>
+</html>
