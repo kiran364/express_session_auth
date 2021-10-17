@@ -105,7 +105,7 @@ app.post('/register', async (req, res)=> {
     res.redirect('/login');
 })
 
-//for logout and clossing session
+//for logout and emd session
 app.post('/logout', (req, res) => {
     req.session.destroy((err) => {
         if(err) throw err;
